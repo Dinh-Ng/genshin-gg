@@ -1,7 +1,9 @@
 import React, { useCallback, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
+  const { t, i18n } = useTranslation()
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState<boolean>(false)
   const toggleMenu = useCallback(() => {
     setIsOpenMobileMenu(!isOpenMobileMenu)
@@ -19,10 +21,18 @@ const Header = () => {
               Genshin.gg
             </h3>
           </a>
+          <div className="nav-brand">
+            <h4
+              onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'vi' : 'en')}
+              className="brand"
+            >
+              {t('language')}
+            </h4>
+          </div>
           <ul className="nav-links ml-auto">
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/' && 'active'}`} to="/">
-                Home
+                Characters
               </Link>
             </li>
             <li className="nav-item">
