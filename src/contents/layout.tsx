@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 type LayoutPropsType = {
   children: PropTypes.ReactNodeLike
   placeholderFilter?: string
+  value?: string
+  onChange?(): void
 }
-const Layout: React.FC<LayoutPropsType> = ({ children, placeholderFilter }) => {
+const Layout: React.FC<LayoutPropsType> = ({ children, placeholderFilter, value, onChange }) => {
   const { t } = useTranslation()
 
   return (
@@ -22,7 +24,8 @@ const Layout: React.FC<LayoutPropsType> = ({ children, placeholderFilter }) => {
                     className="search-input"
                     type="text"
                     placeholder={placeholderFilter}
-                    value=""
+                    value={value}
+                    onChange={onChange}
                   />
                   <div className="search-close" />
                 </div>

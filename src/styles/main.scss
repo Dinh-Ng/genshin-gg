@@ -6,6 +6,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36384a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
@@ -237,6 +255,16 @@ a:hover {
   margin-right: 20px;
   padding: 10px 0;
 }
+
+button.nav-brand {
+  background-color: transparent;
+  border: none;
+}
+
+button.nav-brand:focus {
+  outline: none;
+}
+
 .nav .nav-brand .brand {
   display: flex;
   align-items: center;
@@ -465,7 +493,7 @@ a:hover {
   display: none;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  // width: 100%;
   background: #222431;
   z-index: -14;
   opacity: 0;
@@ -561,9 +589,9 @@ a:hover {
 }
 @media (max-width: 575.98px) {
   .mobile-menu {
-    right: -10px;
-    width: calc(100% + 20px);
-    height: calc(100vh - 80px);
+    // right: -10px;
+    width: calc(100% - 20px);
+    // height: calc(100vh - 80px);
     background: #222431;
     z-index: -14;
     opacity: 0;

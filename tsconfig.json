@@ -2,11 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
-    "baseUrl": ".",
+    "lib": ["dom", "es2020"],
+    "baseUrl": "src",
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
@@ -22,12 +19,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "**/__generated__/**",
-    "node_modules",
-    "node_modules/**"
-  ]
+  "include": ["src"],
+  "exclude": ["**/__generated__/**", "node_modules", "node_modules/**"]
 }

@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
+import flagEn from 'images/flag/en.png'
+import flagVi from 'images/flag/vi.png'
 
 const Header = () => {
   const { t, i18n } = useTranslation()
@@ -11,6 +13,17 @@ const Header = () => {
 
   const { pathname } = useLocation()
 
+  const flag = (language: string) => {
+    switch (language) {
+      case 'en':
+        return flagEn
+      case 'vi':
+        return flagVi
+      default:
+        return flagEn
+    }
+  }
+
   return (
     <nav className="nav">
       <div className="container">
@@ -18,17 +31,18 @@ const Header = () => {
           <a className="nav-brand active" aria-current="page" href="/">
             <h3 className="brand">
               <img src="https://rerollcdn.com/GENSHIN/UI/genshin-logo.svg" alt="brand" />
-              Genshin.gg
+              Genshin
             </h3>
           </a>
-          <div className="nav-brand">
+          <button className="nav-brand">
             <h4
               onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'vi' : 'en')}
               className="brand"
             >
+              <img src={flag(i18n.language)} alt="brand" />
               {t('language')}
             </h4>
-          </div>
+          </button>
           <ul className="nav-links ml-auto">
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/' && 'active'}`} to="/">
