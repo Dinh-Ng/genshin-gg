@@ -1,23 +1,26 @@
 {
   "files": {
-    "main.css": "/genshin-gg/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/genshin-gg/static/js/main.80fbb65b.chunk.js",
-    "main.js.map": "/genshin-gg/static/js/main.80fbb65b.chunk.js.map",
-    "runtime-main.js": "/genshin-gg/static/js/runtime-main.e87963ab.js",
-    "runtime-main.js.map": "/genshin-gg/static/js/runtime-main.e87963ab.js.map",
-    "static/js/2.48650dbf.chunk.js": "/genshin-gg/static/js/2.48650dbf.chunk.js",
-    "static/js/2.48650dbf.chunk.js.map": "/genshin-gg/static/js/2.48650dbf.chunk.js.map",
-    "static/js/3.c0ac44d0.chunk.js": "/genshin-gg/static/js/3.c0ac44d0.chunk.js",
-    "static/js/3.c0ac44d0.chunk.js.map": "/genshin-gg/static/js/3.c0ac44d0.chunk.js.map",
-    "index.html": "/genshin-gg/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/genshin-gg/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.48650dbf.chunk.js.LICENSE.txt": "/genshin-gg/static/js/2.48650dbf.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/genshin-gg/static/media/logo.6ce24c58.svg"
+    "main.css": "/static/css/main.55d0db70.chunk.css",
+    "main.js": "/static/js/main.b9abcd25.chunk.js",
+    "main.js.map": "/static/js/main.b9abcd25.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0b335f95.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0b335f95.js.map",
+    "static/css/2.ff2c45bc.chunk.css": "/static/css/2.ff2c45bc.chunk.css",
+    "static/js/2.a8b6b0b7.chunk.js": "/static/js/2.a8b6b0b7.chunk.js",
+    "static/js/2.a8b6b0b7.chunk.js.map": "/static/js/2.a8b6b0b7.chunk.js.map",
+    "static/js/3.c9ec1edf.chunk.js": "/static/js/3.c9ec1edf.chunk.js",
+    "static/js/3.c9ec1edf.chunk.js.map": "/static/js/3.c9ec1edf.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ff2c45bc.chunk.css.map": "/static/css/2.ff2c45bc.chunk.css.map",
+    "static/css/main.55d0db70.chunk.css.map": "/static/css/main.55d0db70.chunk.css.map",
+    "static/js/2.a8b6b0b7.chunk.js.LICENSE.txt": "/static/js/2.a8b6b0b7.chunk.js.LICENSE.txt",
+    "static/media/getFetch.cjs": "/static/media/getFetch.d7d6010d.cjs"
   },
   "entrypoints": [
-    "static/js/runtime-main.e87963ab.js",
-    "static/js/2.48650dbf.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.80fbb65b.chunk.js"
+    "static/js/runtime-main.0b335f95.js",
+    "static/css/2.ff2c45bc.chunk.css",
+    "static/js/2.a8b6b0b7.chunk.js",
+    "static/css/main.55d0db70.chunk.css",
+    "static/js/main.b9abcd25.chunk.js"
   ]
 }
