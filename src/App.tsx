@@ -1,7 +1,8 @@
+import Farming from 'contents/Farming/Farming'
 import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Home from './contents/Home'
+import Home from './contents/Home/Home'
 
 const App = (props: any) => {
   console.log('props', props?.location)
@@ -11,8 +12,8 @@ const App = (props: any) => {
         <div className="App d-flex flex-column">
           <Header />
           <Switch>
-            <Route path="/about">
-              <About />
+            <Route path="/farming">
+              <Farming />
             </Route>
             <Route path="/users">
               <Users />
@@ -25,10 +26,6 @@ const App = (props: any) => {
       </Router>
     </Suspense>
   )
-}
-
-const About = () => {
-  return <h2>About</h2>
 }
 
 const Users = () => {

@@ -13,6 +13,7 @@ const Home = () => {
   const isEnglish = i18n.language === 'en'
   const [elementFilter, setElementFilter] = useState('')
   const [weaponFilter, setWeaponFilter] = useState('')
+  const [nameFilter, setNameFilter] = useState('')
 
   const chooseElement = useCallback(
     (element) => {
@@ -28,10 +29,13 @@ const Home = () => {
     [weaponFilter]
   )
 
+  console.log('nameFilter', nameFilter)
+
   return (
     <Layout
+      title={t('characters.title')}
       placeholderFilter={t('characters.placeholderFilter')}
-      // onChange={(text) => console.log('text', text)}
+      onChange={(i) => setNameFilter(i)}
     >
       <div className="filters">
         <div className="filters-list">
@@ -71,7 +75,8 @@ const Home = () => {
           (character: { name: string; element: string; weapon: string; isNew?: boolean }) => {
             if (
               (character.element === elementFilter || elementFilter === '') &&
-              (character.weapon === weaponFilter || weaponFilter === '')
+              (character.weapon === weaponFilter || weaponFilter === '') &&
+              character.name.toLowerCase().includes(nameFilter.toLowerCase())
             ) {
               return (
                 <a

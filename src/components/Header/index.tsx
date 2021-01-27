@@ -46,12 +46,12 @@ const Header = () => {
           <ul className="nav-links ml-auto">
             <li className="nav-item">
               <Link className={`nav-link ${pathname === '/' && 'active'}`} to="/">
-                Characters
+                {t('characters.header')}
               </Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link ${pathname === '/about' && 'active'}`} to="/about">
-                About
+              <Link className={`nav-link ${pathname === '/farming' && 'active'}`} to="/farming">
+                {t('farming.header')}
               </Link>
             </li>
             <li className="nav-item">
@@ -60,12 +60,12 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <div className={`hamburger ${isOpenMobileMenu && 'is-active'}`} onClick={toggleMenu}>
+          <div className={`hamburger ${isOpenMobileMenu ? 'is-active' : ''}`} onClick={toggleMenu}>
             <div className="hamburger-box">
               <div className="hamburger-inner"></div>
             </div>
           </div>
-          <div className={`mobile-menu ${isOpenMobileMenu && 'open'}`}>
+          <div className={`mobile-menu ${isOpenMobileMenu ? 'open' : ''}`}>
             <ul className="mobile-links">
               <li className="mobile-item">
                 <a className="mobile-link" href="/">
