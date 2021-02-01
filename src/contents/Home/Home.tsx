@@ -6,14 +6,15 @@ import Layout from '../layout'
 import Tooltip from 'rc-tooltip'
 import i18n from 'i18n'
 import { Characters } from 'constants/Character'
+import { URL } from 'constants/general'
 
-const Home = () => {
+const Home: React.FC = () => {
   const { t } = useTranslation()
 
   const isEnglish = i18n.language === 'en'
-  const [elementFilter, setElementFilter] = useState('')
-  const [weaponFilter, setWeaponFilter] = useState('')
-  const [nameFilter, setNameFilter] = useState('')
+  const [elementFilter, setElementFilter] = useState<string>('')
+  const [weaponFilter, setWeaponFilter] = useState<string>('')
+  const [nameFilter, setNameFilter] = useState<string>('')
 
   const chooseElement = useCallback(
     (element) => {
@@ -29,13 +30,11 @@ const Home = () => {
     [weaponFilter]
   )
 
-  console.log('nameFilter', nameFilter)
-
   return (
     <Layout
       title={t('characters.title')}
       placeholderFilter={t('characters.placeholderFilter')}
-      onChange={(i) => setNameFilter(i)}
+      onChange={(name) => setNameFilter(name)}
     >
       <div className="filters">
         <div className="filters-list">
@@ -48,7 +47,7 @@ const Home = () => {
               <img
                 alt={element.en}
                 className={`filters-item ${element.en === elementFilter && 'active'}`}
-                src={`https://rerollcdn.com/GENSHIN/Elements/Element_${element.en}.png`}
+                src={`${URL.ELEMENT}${element.en}.png`}
                 onClick={() => chooseElement(element.en)}
               />
             </Tooltip>
@@ -62,8 +61,8 @@ const Home = () => {
             >
               <img
                 className={`filters-item weapon ${weapon.en === weaponFilter && 'active'}`}
-                alt={weapon.vi}
-                src={`https://rerollcdn.com/GENSHIN/Weapon/NEW/${weapon.en}.png`}
+                alt={weapon.en}
+                src={`${URL.WEAPON}${weapon.en}.png`}
                 onClick={() => chooseWeapon(weapon.en)}
               />
             </Tooltip>
@@ -85,14 +84,14 @@ const Home = () => {
                   href={`/character/${character.name}`}
                 >
                   <img
-                    className="character-icon"
                     alt={`${character.name}`}
-                    src={`https://rerollcdn.com/GENSHIN/Characters/${character.name}.png`}
+                    className="character-icon"
+                    src={`${URL.CHARACTER_IMAGE}${character.name}.png`}
                   />
                   <img
-                    src={`https://rerollcdn.com/GENSHIN/Elements/Element_${character.element}.png`}
+                    alt={character.element}
                     className="character-type"
-                    alt="Pyro"
+                    src={`${URL.ELEMENT}${character.element}.png`}
                   />
                   <h2 className="character-name">{character.name}</h2>
                 </a>
