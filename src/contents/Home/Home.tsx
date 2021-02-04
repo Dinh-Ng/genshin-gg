@@ -4,12 +4,11 @@ import ElementList from 'constants/Element'
 import { BaseWeapon } from 'constants/Weapon'
 import Layout from '../layout'
 import Tooltip from 'rc-tooltip'
-import i18n from 'i18n'
 import { Characters } from 'constants/Character'
 import { URL } from 'constants/general'
 
 const Home: React.FC = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const isEnglish = i18n.language === 'en'
   const [elementFilter, setElementFilter] = useState<string>('')

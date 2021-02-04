@@ -40,9 +40,9 @@ const Farming: React.FC = () => {
             <div className="rt-thead -header">
               <div className="rt-tr" role="row">
                 <div
-                  className="rt-th -cursor-pointer talent-header-1"
+                  className="talent-header-1 rt-th -cursor-pointer"
                   role="columnheader"
-                  // style={{ flex: '150 0 auto', width: '150px' }}
+                  style={{ flex: '150 0 auto', width: '150px' }}
                   tabIndex={-1}
                 >
                   <div>{t('farming.material')}</div>
@@ -50,7 +50,7 @@ const Farming: React.FC = () => {
                 <div
                   className="rt-th -cursor-pointer talent-header-1"
                   role="columnheader"
-                  // style={{ flex: '150 0 auto', width: '150px' }}
+                  style={{ flex: '150 0 auto', width: '150px' }}
                   tabIndex={-1}
                 >
                   <div>{t('farming.days')}</div>
@@ -58,7 +58,7 @@ const Farming: React.FC = () => {
                 <div
                   className="rt-th -cursor-pointer talent-header-2"
                   role="columnheader"
-                  // style={{ flex: '300 0 auto', width: '300px' }}
+                  style={{ flex: '300 0 auto', width: '300px' }}
                   tabIndex={-1}
                 >
                   <div>{t('farming.characters')}</div>
