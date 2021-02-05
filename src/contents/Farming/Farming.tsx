@@ -1,12 +1,13 @@
 import { CharacterAscension, Talents } from 'constants/Farming'
 import Layout from 'contents/layout'
-import React from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import CharacterAscensionItem from './components/CharacterAscensionItem'
 import TalentItem from './components/TalentItem'
 
 const Farming: React.FC = () => {
   const { t } = useTranslation()
+  const [nameFilter, setNameFilter] = useState<string>('')
 
   const renderTalentList = () =>
     Talents.map(
@@ -16,22 +17,24 @@ const Farming: React.FC = () => {
         dayEn: string
         dayVi: string
         characters: { name: string; element: string }[]
-      }) => <TalentItem talent={talent} key={talent.nameEn} />
+      }) => <TalentItem talent={talent} key={talent.nameEn} charFilter={nameFilter} />
     )
 
   const renderCharacterAscension = () =>
     CharacterAscension.map(
-      (characterAscension: {
+      (item: {
         nameEn: string
         nameVi: string
         characters?: { name: string; element: string }[]
-      }) => (
-        <CharacterAscensionItem materials={characterAscension} key={characterAscension.nameEn} />
-      )
+      }) => <CharacterAscensionItem materials={item} key={item.nameEn} charFilter={nameFilter} />
     )
 
   return (
-    <Layout title={t('farming.title')} placeholderFilter={t('characters.placeholderFilter')}>
+    <Layout
+      title={t('farming.title')}
+      placeholderFilter={t('characters.placeholderFilter')}
+      onChange={(name) => setNameFilter(name)}
+    >
       {/* TALENT */}
       <h2>{t('farming.headerTalent')}</h2>
       <div className="gear-list">
