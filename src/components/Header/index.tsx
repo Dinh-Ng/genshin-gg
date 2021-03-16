@@ -7,6 +7,7 @@ import flagVi from 'images/flag/vi.png'
 const Header = () => {
   const { t, i18n } = useTranslation()
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState<boolean>(false)
+  const [isOpenDropdown, setIsOpenDropdown] = useState<boolean>(false)
   const toggleMenu = useCallback(() => {
     setIsOpenMobileMenu(!isOpenMobileMenu)
   }, [isOpenMobileMenu])
@@ -54,10 +55,55 @@ const Header = () => {
                 {t('farming.header')}
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className={`nav-link ${pathname === '/tier-list' && 'active'}`} to="/tier-list">
                 {t('tierList.header')}
               </Link>
+            </li> */}
+            <li
+              className="nav-item dropdown"
+              onMouseEnter={() => setIsOpenDropdown(true)}
+              onMouseLeave={() => setIsOpenDropdown(false)}
+            >
+              <div
+                className="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Database<i className="arrow down"></i>
+              </div>
+              <div
+                className={`dropdown-menu${isOpenDropdown ? ' open' : ''}`}
+                aria-labelledby="navbarDropdown"
+              >
+                <a className={`nav-link ${pathname === '/weapons' && 'active'}`} href="/weapons">
+                  {t('weapon.header')}
+                </a>
+                <a
+                  className={`nav-link ${pathname === '/Artifacts' && 'active'}`}
+                  href="/artifacts"
+                >
+                  Artifacts
+                </a>
+                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/elements">
+                  Elements
+                </a>
+                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/cooking">
+                  Cooking
+                </a>
+                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/alchemy">
+                  Alchemy
+                </a>
+                <a
+                  className={`nav-link ${pathname === '/Artifacts' && 'active'}`}
+                  href="/spiral-abyss"
+                >
+                  Spiral Abyss
+                </a>
+              </div>
             </li>
           </ul>
           <div className={`hamburger ${isOpenMobileMenu ? 'is-active' : ''}`} onClick={toggleMenu}>
@@ -69,32 +115,22 @@ const Header = () => {
             <ul className="mobile-links">
               <li className="mobile-item">
                 <a className="mobile-link" href="/">
-                  Characters
+                  {t('characters.header')}
                 </a>
               </li>
-              <li className="mobile-item">
-                <a className="mobile-link" href="/teams" aria-current="page">
-                  Teams
-                </a>
-              </li>
-              <li className="mobile-item">
+              {/* <li className="mobile-item">
                 <a className="mobile-link" href="/tier-list">
                   Tier List
                 </a>
-              </li>
-              <li className="mobile-item">
-                <a className="mobile-link" href="/map">
-                  Map
-                </a>
-              </li>
+              </li> */}
               <li className="mobile-item">
                 <a className="mobile-link" href="/farming">
-                  Farming Guide
+                  {t('farming.header')}
                 </a>
               </li>
               <li className="mobile-item">
                 <a className="mobile-link" href="/weapons">
-                  Weapons
+                  {t('weapon.header')}
                 </a>
               </li>
               <li className="mobile-item">
