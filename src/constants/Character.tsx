@@ -445,7 +445,6 @@ const Characters = [
     name: 'Xiao',
     element: Anemo,
     weapon: Polearm,
-    isNew: true,
     tier: {
       mainDps: { single: 0, aoe: 0 },
       subDps: { single: 0, aoe: 0 },
@@ -542,6 +541,23 @@ const Characters = [
       },
       support: { buff: 0, heal: 0 },
     },
+  },
+  {
+    name: 'Hu Tao',
+    element: Pyro,
+    weapon: Polearm,
+    tier: {
+      mainDps: { single: 0, aoe: 0 },
+      subDps: {
+        single: 4,
+        aoe: 3,
+        commentEn:
+          'Despite being Geo, Albedo is still able to deal a ton of damage very consistently.',
+        commentVi: '',
+      },
+      support: { buff: 0, heal: 0 },
+    },
+    isNew: true,
   },
 ]
 
