@@ -1,6 +1,7 @@
 import Farming from 'contents/Farming/Farming'
 import TierList from 'contents/TierList/TierList'
-import React, { Suspense } from 'react'
+import Weapon from 'contents/Weapon/Weapon'
+import { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './contents/Home/Home'
@@ -19,6 +20,9 @@ const App = (props: any) => {
             <Route path="/tier-list">
               <TierList />
             </Route>
+            <Route path="/weapons">
+              <Weapon />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
@@ -27,10 +31,6 @@ const App = (props: any) => {
       </Router>
     </Suspense>
   )
-}
-
-const Users = () => {
-  return <h2>Users</h2>
 }
 
 export default App
