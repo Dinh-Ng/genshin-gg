@@ -64,6 +64,7 @@ const Talents = [
       { name: 'Fischl', element: 'Electro' },
       { name: 'Kaeya', element: 'Cryo' },
       { name: 'Lisa', element: 'Electro' },
+      { name: 'Rosaria', element: 'Cryo' },
       { name: 'Traveler (Anemo)', element: 'Anemo' },
       { name: 'Traveler (Geo)', element: 'Geo' },
       { name: 'Venti', element: 'Anemo' },
@@ -178,7 +179,11 @@ const Talents = [
     nameVi: 'Linh Hồn Võ Luyện-Cô Độc',
     dayEn: 'Tartaglia',
     dayVi: 'Childe',
-    characters: [{ name: 'Ganyu', element: 'Cryo' }],
+    characters: [
+      { name: 'Ganyu', element: 'Cryo' },
+      { name: 'Rosaria', element: 'Cryo' },
+      { name: 'Xiao', element: 'Anemo' },
+    ],
   },
 ]
 
@@ -221,7 +226,6 @@ const CharacterAscension = [
     characters: [
       { name: 'Chongyun', element: 'Cryo' },
       { name: 'Diona', element: 'Cryo' },
-      { name: 'Ganyu', element: 'Cryo' },
       { name: 'Kaeya', element: 'Cryo' },
       { name: 'Qiqi', element: 'Cryo' },
     ],
@@ -233,7 +237,6 @@ const CharacterAscension = [
       { name: 'Jean', element: 'Anemo' },
       { name: 'Sucrose', element: 'Anemo' },
       { name: 'Venti', element: 'Anemo' },
-      { name: 'Xiao', element: 'Anemo' },
     ],
   },
   {
@@ -245,6 +248,14 @@ const CharacterAscension = [
       { name: 'Keqing', element: 'Electro' },
       { name: 'Lisa', element: 'Electro' },
       { name: 'Razor', element: 'Electro' },
+    ],
+  },
+  {
+    nameEn: 'Juvenile Jade',
+    nameVi: 'Ngọc Chưa Chín',
+    characters: [
+      { name: 'Ganyu', element: 'Cryo' },
+      { name: 'Xiao', element: 'Anemo' },
     ],
   },
   {

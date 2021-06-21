@@ -169,6 +169,28 @@ const Characters = [
     },
   },
   {
+    name: 'Ganyu',
+    element: Cryo,
+    weapon: Bow,
+    tier: {
+      mainDps: {
+        single: 6,
+        aoe: 6,
+        commentEn:
+          "With less restrictions on how she deals damage, as well as her CC access (Freeze/Taunt), Ganyu's able to maintain her already high DPS much more consistently than other carries.",
+        commentVi: '',
+      },
+      subDps: {
+        single: 4,
+        aoe: 5,
+        commentEn:
+          'Even with most of her power budget in her Aimed Shot, Ganyu is still able to work really well as a Sub DPS, especially in situations where there are multiple enemies close to each other.',
+        commentVi: '',
+      },
+      support: { buff: 0, heal: 0 },
+    },
+  },
+  {
     name: 'Jean',
     element: Anemo,
     weapon: Sword,
@@ -358,7 +380,7 @@ const Characters = [
         single: 3,
         aoe: 4,
         commentEn:
-          'Even during his Skill, Tartaglia is surpisingly not that high single target DPS. However, he makes up for this with his AoE, great team set up and high energy gen/spammable burst.',
+          'Even during his Skill, Tartaglia is surprisingly not that high single target DPS. However, he makes up for this with his AoE, great team set up and high energy gen/spammable burst.',
         commentVi: '',
       },
       subDps: { single: 0, aoe: 0 },
@@ -521,31 +543,57 @@ const Characters = [
     },
   },
   {
-    name: 'Ganyu',
-    element: Cryo,
-    weapon: Bow,
+    name: 'Hu Tao',
+    element: Pyro,
+    weapon: Polearm,
     tier: {
-      mainDps: {
-        single: 6,
-        aoe: 6,
-        commentEn:
-          "With less restrictions on how she deals damage, as well as her CC access (Freeze/Taunt), Ganyu's able to maintain her already high DPS much more consistently than other carries.",
-        commentVi: '',
-      },
+      mainDps: { single: 0, aoe: 0 },
       subDps: {
         single: 4,
-        aoe: 5,
+        aoe: 3,
         commentEn:
-          'Even with most of her power budget in her Aimed Shot, Ganyu is still able to work really well as a Sub DPS, especially in situations where there are multiple enemies close to each other.',
+          'Despite being Geo, Albedo is still able to deal a ton of damage very consistently.',
         commentVi: '',
       },
       support: { buff: 0, heal: 0 },
     },
   },
   {
-    name: 'Hu Tao',
+    name: 'Yanfei',
     element: Pyro,
+    weapon: Catalyst,
+    tier: {
+      mainDps: { single: 0, aoe: 0 },
+      subDps: {
+        single: 4,
+        aoe: 3,
+        commentEn:
+          'Despite being Geo, Albedo is still able to deal a ton of damage very consistently.',
+        commentVi: '',
+      },
+      support: { buff: 0, heal: 0 },
+    },
+  },
+  {
+    name: 'Rosaria',
+    element: Cryo,
     weapon: Polearm,
+    tier: {
+      mainDps: { single: 0, aoe: 0 },
+      subDps: {
+        single: 4,
+        aoe: 3,
+        commentEn:
+          'Despite being Geo, Albedo is still able to deal a ton of damage very consistently.',
+        commentVi: '',
+      },
+      support: { buff: 0, heal: 0 },
+    },
+  },
+  {
+    name: 'Eula',
+    element: Cryo,
+    weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
       subDps: {
