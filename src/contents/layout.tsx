@@ -26,9 +26,9 @@ const Layout: React.FC<LayoutPropsType> = ({ children, title, placeholderFilter,
                     type="text"
                     placeholder={placeholderFilter}
                     value={searchText}
-                    onChange={(i) => {
-                      onChange && onChange(i.target.value)
-                      setSearchText(i.target.value)
+                    onChange={({ target }) => {
+                      onChange && onChange(target.value)
+                      setSearchText(target.value)
                     }}
                   />
                   <div

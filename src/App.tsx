@@ -6,8 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Home from './contents/Home/Home'
 
-const App = (props: any) => {
-  console.log('props', props?.location)
+const App = () => {
   return (
     <Suspense fallback="loading">
       <Router>
