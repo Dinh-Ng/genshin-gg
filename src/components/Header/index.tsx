@@ -79,30 +79,24 @@ const Header = () => {
                 className={`dropdown-menu${isOpenDropdown ? ' open' : ''}`}
                 aria-labelledby="navbarDropdown"
               >
-                <a className={`nav-link ${pathname === '/weapons' && 'active'}`} href="/weapons">
+                <Link className={`nav-link ${pathname === '/weapons' && 'active'}`} to="/weapons">
                   {t('weapon.header')}
-                </a>
-                <a
+                </Link>
+                <Link
                   className={`nav-link ${pathname === '/Artifacts' && 'active'}`}
-                  href="/artifacts"
+                  to="/artifacts"
                 >
                   Artifacts
-                </a>
-                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/elements">
+                </Link>
+                <Link className={`nav-link ${pathname === '/Artifacts' && 'active'}`} to="/elements">
                   Elements
-                </a>
-                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/cooking">
+                </Link>
+                <Link className={`nav-link ${pathname === '/Artifacts' && 'active'}`} to="/cooking">
                   Cooking
-                </a>
-                <a className={`nav-link ${pathname === '/Artifacts' && 'active'}`} href="/alchemy">
+                </Link>
+                <Link className={`nav-link ${pathname === '/Artifacts' && 'active'}`} to="/alchemy">
                   Alchemy
-                </a>
-                <a
-                  className={`nav-link ${pathname === '/Artifacts' && 'active'}`}
-                  href="/spiral-abyss"
-                >
-                  Spiral Abyss
-                </a>
+                </Link>
               </div>
             </li>
           </ul>
@@ -114,9 +108,9 @@ const Header = () => {
           <div className={`mobile-menu ${isOpenMobileMenu ? 'open' : ''}`}>
             <ul className="mobile-links">
               <li className="mobile-item">
-                <a className="mobile-link" href="/">
+                <Link className="mobile-link" to="/">
                   {t('characters.header')}
-                </a>
+                </Link>
               </li>
               {/* <li className="mobile-item">
                 <a className="mobile-link" href="/tier-list">
@@ -124,39 +118,34 @@ const Header = () => {
                 </a>
               </li> */}
               <li className="mobile-item">
-                <a className="mobile-link" href="/farming">
+                <Link className="mobile-link" to="/farming">
                   {t('farming.header')}
-                </a>
+                </Link>
               </li>
               <li className="mobile-item">
-                <a className="mobile-link" href="/weapons">
+                <Link className="mobile-link" to="/weapons">
                   {t('weapon.header')}
-                </a>
+                </Link>
               </li>
               <li className="mobile-item">
-                <a className="mobile-link" href="/artifacts">
+                <Link className="mobile-link" to="/artifacts">
                   Artifacts
-                </a>
+                </Link>
               </li>
               <li className="mobile-item">
-                <a className="mobile-link" href="/elements">
+                <Link className="mobile-link" to="/elements">
                   Elements
-                </a>
+                </Link>
               </li>
               <li className="mobile-item">
-                <a className="mobile-link" href="/cooking">
+                <Link className="mobile-link" to="/cooking">
                   Cooking
-                </a>
+                </Link>
               </li>
               <li className="mobile-item">
-                <a className="mobile-link" href="/alchemy">
+                <Link className="mobile-link" to="/alchemy">
                   Alchemy
-                </a>
-              </li>
-              <li className="mobile-item">
-                <a className="mobile-link" href="/spiral-abyss">
-                  Spiral Abyss
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

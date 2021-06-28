@@ -43,41 +43,6 @@ const secondVi = {
   PDM: 'Tăng Sát Thương Vật Lý',
 }
 
-const WeaponList2 = [
-  {
-    nameEn: 'Summit Shaper',
-    nameVi: 'Kiếm Chước Phong',
-    typeEn: typeEn.Sword,
-    typeVi: typeVi.Sword,
-    rarity: 5,
-    ATK: 46,
-    secondaryVi: secondEn.ATK,
-    secondaryEn: secondVi.ATK,
-    bonusEn:
-      'Increases Shield Strength by <b>20/25/30/35/40%</b>. Scoring hits on opponents increases ATK by <b>4/5/6/7/8%</b> for 8s. Max 5 stacks. Can only occur once every 0.3s. While protected by a shield, this ATK increase effect is increased by 100%.',
-    bonusVi:
-      'Hiệu quả giáp tăng <b>20/25/30/35/40%</b>, Trong vòng 8 giây sau khi đánh trúng, tấn công tăng <b>4/5/6/7/8%</b>. Cộng dồn 5 tầng, mỗi 0.3 giây chỉ được thi triển 1 lần. Ngoài ra khi được khiên bảo vệ, hiệu quả tấn công tăng 100%.',
-    locationEn: 'Gacha',
-    locationVi: 'Gacha',
-  },
-  {
-    nameEn: 'Skyward Blade',
-    nameVi: 'Thiên Không Kiếm',
-    typeEn: typeEn.Sword,
-    typeVi: typeVi.Sword,
-    rarity: 5,
-    ATK: 46,
-    secondaryVi: 'Hiệu quả nạp nguyên tố',
-    secondaryEn: 'Energy Recharge',
-    bonusEn:
-      'CRIT Rate increased by <b>4/5/6/7/8%</b>. Gains Skypiercing Might upon using an Elemental Burst:<br>Increases Movement SPD by 10%, increases ATK SPD by 10%, and increases the DMG of Normal and Charged Attack hits by <b>20/25/30/35/40%</b> for 12s.',
-    bonusVi:
-      'Tỷ lệ bạo kích tăng <b>4/5/6/7/8%</b>, khi thi triển kỹ năng nộ nhận khí thế phá hủy trên không:<br>Tốc độ di chuyển tăng 10%, tốc độ tấn công tăng 10%, và sát thương tấn công thường hoặc trọng kích tăng <b>20/25/30/35/40%</b>, kéo dài 12s.',
-    locationEn: 'Gacha',
-    locationVi: 'Gacha',
-  },
-]
-
 const WeaponList = [
   {
     nameEn: 'Summit Shaper',
