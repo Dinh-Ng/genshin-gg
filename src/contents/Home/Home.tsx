@@ -6,6 +6,9 @@ import Layout from '../layout'
 import Tooltip from 'rc-tooltip'
 import { Characters } from 'constants/Character'
 import { URL } from 'constants/general'
+import { Link } from 'react-router-dom'
+import star4 from 'images/background/4star.png'
+import star5 from 'images/background/5star.png'
 
 const Home: React.FC = () => {
   const { t, i18n } = useTranslation()
@@ -28,13 +31,6 @@ const Home: React.FC = () => {
     },
     [weaponFilter]
   )
-
-  const compare = (a: { name: string }, b: { name: string }) => {
-    if (a.name < b.name) return -1
-    if (a.name > b.name) return 1
-    return 0
-  }
-  Characters.sort(compare)
 
   return (
     <Layout
@@ -77,22 +73,32 @@ const Home: React.FC = () => {
       </div>
       <div className="character-list">
         {Characters.map(
-          (character: { name: string; element: string; weapon: string; isNew?: boolean }) => {
+          (character: {
+            name: string
+            element: string
+            weapon: string
+            isNew?: boolean
+            star: number
+          }) => {
             if (
               (character.element === elementFilter || elementFilter === '') &&
               (character.weapon === weaponFilter || weaponFilter === '') &&
               character.name.toLowerCase().includes(nameFilter.toLowerCase())
             ) {
               return (
-                <a
+                <Link
                   key={character.name}
                   className={`character-portrait ${character?.isNew && 'new'}`}
-                  href={`/character/${character.name}`}
+                  to={`/character/${character.name}`}
                 >
                   <img
                     alt={`${character.name}`}
                     className="character-icon"
                     src={`${URL.CHARACTER_IMAGE}${character.name}.png`}
+                    style={{
+                      backgroundImage: `url(${character.star === 5 ? star5 : star4})`,
+                      backgroundSize: 'cover',
+                    }}
                   />
                   <img
                     alt={character.element}
@@ -100,7 +106,7 @@ const Home: React.FC = () => {
                     src={`${URL.ELEMENT}${character.element}.png`}
                   />
                   <h2 className="character-name">{character.name}</h2>
-                </a>
+                </Link>
               )
             } else return <div />
           }

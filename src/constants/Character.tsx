@@ -26,6 +26,7 @@ const Characters = [
   {
     name: 'Amber',
     element: Pyro,
+    star: 4,
     weapon: Bow,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -42,6 +43,7 @@ const Characters = [
   {
     name: 'Barbara',
     element: Hydro,
+    star: 4,
     weapon: Catalyst,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -57,6 +59,7 @@ const Characters = [
   {
     name: 'Beidou',
     element: Electro,
+    star: 4,
     weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -79,6 +82,7 @@ const Characters = [
   {
     name: 'Bennett',
     element: Pyro,
+    star: 4,
     weapon: Sword,
     tier: {
       mainDps: {
@@ -101,6 +105,7 @@ const Characters = [
   {
     name: 'Chongyun',
     element: Cryo,
+    star: 4,
     weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -117,6 +122,7 @@ const Characters = [
   {
     name: 'Diluc',
     element: Pyro,
+    star: 5,
     weapon: Claymore,
     tier: {
       mainDps: {
@@ -133,6 +139,7 @@ const Characters = [
   {
     name: 'Diona',
     element: Cryo,
+    star: 4,
     weapon: Bow,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -149,6 +156,7 @@ const Characters = [
   {
     name: 'Fischl',
     element: Electro,
+    star: 4,
     weapon: Bow,
     tier: {
       mainDps: {
@@ -171,6 +179,7 @@ const Characters = [
   {
     name: 'Ganyu',
     element: Cryo,
+    star: 5,
     weapon: Bow,
     tier: {
       mainDps: {
@@ -193,6 +202,7 @@ const Characters = [
   {
     name: 'Jean',
     element: Anemo,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -209,6 +219,7 @@ const Characters = [
   {
     name: 'Kaeya',
     element: Cryo,
+    star: 4,
     weapon: Sword,
     tier: {
       mainDps: {
@@ -230,6 +241,7 @@ const Characters = [
   {
     name: 'Keqing',
     element: Electro,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: {
@@ -246,6 +258,7 @@ const Characters = [
   {
     name: 'Klee',
     element: Pyro,
+    star: 5,
     weapon: Catalyst,
     tier: {
       mainDps: {
@@ -262,6 +275,7 @@ const Characters = [
   {
     name: 'Lisa',
     element: Electro,
+    star: 4,
     weapon: Catalyst,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -278,6 +292,7 @@ const Characters = [
   {
     name: 'Mona',
     element: Hydro,
+    star: 5,
     weapon: Catalyst,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -294,6 +309,7 @@ const Characters = [
   {
     name: 'Ningguang',
     element: Geo,
+    star: 4,
     weapon: Catalyst,
     tier: {
       mainDps: {
@@ -310,6 +326,7 @@ const Characters = [
   {
     name: 'Noelle',
     element: Geo,
+    star: 4,
     weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -326,6 +343,7 @@ const Characters = [
   {
     name: 'Qiqi',
     element: Cryo,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -342,6 +360,7 @@ const Characters = [
   {
     name: 'Razor',
     element: Electro,
+    star: 4,
     weapon: Claymore,
     tier: {
       mainDps: {
@@ -358,6 +377,7 @@ const Characters = [
   {
     name: 'Sucrose',
     element: Cryo,
+    star: 4,
     weapon: Catalyst,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -374,6 +394,7 @@ const Characters = [
   {
     name: 'Tartaglia',
     element: Hydro,
+    star: 5,
     weapon: Bow,
     tier: {
       mainDps: {
@@ -390,6 +411,7 @@ const Characters = [
   {
     name: 'Traveler (Anemo)',
     element: Anemo,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -406,6 +428,7 @@ const Characters = [
   {
     name: 'Traveler (Geo)',
     element: Geo,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -422,6 +445,7 @@ const Characters = [
   {
     name: 'Venti',
     element: Anemo,
+    star: 5,
     weapon: Bow,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -444,6 +468,7 @@ const Characters = [
   {
     name: 'Xiangling',
     element: Pyro,
+    star: 4,
     weapon: Polearm,
     tier: {
       mainDps: {
@@ -466,6 +491,7 @@ const Characters = [
   {
     name: 'Xiao',
     element: Anemo,
+    star: 5,
     weapon: Polearm,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -476,6 +502,7 @@ const Characters = [
   {
     name: 'Xingqiu',
     element: Hydro,
+    star: 4,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -498,6 +525,7 @@ const Characters = [
   {
     name: 'Xinyan',
     element: Pyro,
+    star: 4,
     weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -513,6 +541,7 @@ const Characters = [
   {
     name: 'Zhongli',
     element: Geo,
+    star: 5,
     weapon: Polearm,
     tier: {
       mainDps: {
@@ -529,6 +558,7 @@ const Characters = [
   {
     name: 'Albedo',
     element: Geo,
+    star: 5,
     weapon: Sword,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -545,6 +575,7 @@ const Characters = [
   {
     name: 'Hu Tao',
     element: Pyro,
+    star: 5,
     weapon: Polearm,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -561,6 +592,7 @@ const Characters = [
   {
     name: 'Yanfei',
     element: Pyro,
+    star: 4,
     weapon: Catalyst,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -577,6 +609,7 @@ const Characters = [
   {
     name: 'Rosaria',
     element: Cryo,
+    star: 4,
     weapon: Polearm,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -593,6 +626,7 @@ const Characters = [
   {
     name: 'Eula',
     element: Cryo,
+    star: 5,
     weapon: Claymore,
     tier: {
       mainDps: { single: 0, aoe: 0 },
@@ -608,5 +642,12 @@ const Characters = [
     isNew: true,
   },
 ]
+
+const compare = (a: { name: string }, b: { name: string }) => {
+  if (a.name < b.name) return -1
+  if (a.name > b.name) return 1
+  return 0
+}
+Characters.sort(compare)
 
 export { Characters }
