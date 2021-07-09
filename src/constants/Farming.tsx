@@ -35,6 +35,7 @@ const Talents = [
     characters: [
       { name: 'Bennett', element: 'Pyro' },
       { name: 'Diluc', element: 'Pyro' },
+      { name: 'Eula', element: 'Cryo' },
       { name: 'Jean', element: 'Anemo' },
       { name: 'Mona', element: 'Hydro' },
       { name: 'Noelle', element: 'Geo' },
@@ -51,6 +52,8 @@ const Talents = [
     characters: [
       { name: 'Chongyun', element: 'Cryo' },
       { name: 'Ganyu', element: 'Cryo' },
+      { name: 'Hu Tao', element: 'Pyro' },
+      { name: 'Kazuha', element: 'Anemo' },
       { name: 'Xiangling', element: 'Pyro' },
     ],
   },
@@ -79,6 +82,7 @@ const Talents = [
       { name: 'Beidou', element: 'Electro' },
       { name: 'Xingqiu', element: 'Hydro' },
       { name: 'Xinyan', element: 'Pyro' },
+      { name: 'Yanfei', element: 'Pyro' },
       { name: 'Zhongli', element: 'Geo' },
     ],
   },
@@ -171,6 +175,7 @@ const Talents = [
     dayVi: 'Childe',
     characters: [
       { name: 'Diona', element: 'Cryo' },
+      { name: 'Hu Tao', element: 'Pyro' },
       { name: 'Tartaglia', element: 'Hydro' },
     ],
   },
@@ -183,6 +188,33 @@ const Talents = [
       { name: 'Ganyu', element: 'Cryo' },
       { name: 'Rosaria', element: 'Cryo' },
       { name: 'Xiao', element: 'Anemo' },
+    ],
+  },
+  {
+    nameEn: 'Bloodjade Branch',
+    nameVi: 'Nhánh Huyết Ngọc',
+    dayEn: 'Azhdaha',
+    dayVi: 'Azhdaha-',
+    characters: [
+      { name: 'Yanfei', element: 'Pyro' },
+    ],
+  },
+  {
+    nameEn: 'Dragon Lord\'s Crown',
+    nameVi: 'Vương Miện Vua Rồng',
+    dayEn: 'Azhdaha',
+    dayVi: 'Azhdaha-',
+    characters: [
+      { name: 'Eula', element: 'Cryo' },
+    ],
+  },
+  {
+    nameEn: 'Gilded Scale',
+    nameVi: 'Vảy Vàng',
+    dayEn: 'Azhdaha',
+    dayVi: 'Azhdaha-',
+    characters: [
+      { name: 'Kazuha', element: 'Anemo' },
     ],
   },
 ]
@@ -226,7 +258,9 @@ const CharacterAscension = [
     characters: [
       { name: 'Chongyun', element: 'Cryo' },
       { name: 'Diona', element: 'Cryo' },
+      { name: 'Ganyu', element: 'Cryo' },
       { name: 'Kaeya', element: 'Cryo' },
+      { name: 'Rosaria', element: 'Cryo' },
       { name: 'Qiqi', element: 'Cryo' },
     ],
   },
@@ -251,11 +285,26 @@ const CharacterAscension = [
     ],
   },
   {
+    nameEn: 'Crystalline Bloom',
+    nameVi: 'Tinh Hoa Ngưng Kết',
+    characters: [
+      { name: 'Eula', element: 'Cryo' },
+    ],
+  },
+  {
     nameEn: 'Juvenile Jade',
     nameVi: 'Ngọc Chưa Chín',
     characters: [
-      { name: 'Ganyu', element: 'Cryo' },
+      { name: 'Hu Tao', element: 'Pyro' },
       { name: 'Xiao', element: 'Anemo' },
+      { name: 'Yanfei', element: 'Pyro' },
+    ],
+  },
+  {
+    nameEn: 'Marionette Core',
+    nameVi: 'Lõi Marionette',
+    characters: [
+      { name: 'Kazuha', element: 'Anemo' },
     ],
   },
   {
@@ -263,6 +312,7 @@ const CharacterAscension = [
     nameVi: 'Mặt Nạ Vỡ',
     characters: [
       { name: 'Chongyun', element: 'Cryo' },
+      { name: 'Eula', element: 'Cryo' },
       { name: 'Jean', element: 'Anemo' },
       { name: 'Noelle', element: 'Geo' },
       { name: 'Razor', element: 'Electro' },
@@ -335,6 +385,7 @@ const CharacterAscension = [
     characters: [
       { name: 'Diluc', element: 'Pyro' },
       { name: 'Ningguang', element: 'Geo' },
+      { name: 'Rosaria', element: 'Cryo' },
       { name: 'Tartaglia', element: 'Hydro' },
     ],
   },
@@ -379,7 +430,9 @@ const CharacterAscension = [
       { name: 'Beidou', element: 'Electro' },
       { name: 'Bennett', element: 'Pyro' },
       { name: 'Kaeya', element: 'Cryo' },
+      { name: 'Kazuha', element: 'Anemo' },
       { name: 'Xinyan', element: 'Pyro' },
+      { name: 'Yanfei', element: 'Pyro' },
     ],
   },
   {
@@ -399,6 +452,7 @@ const CharacterAscension = [
     nameVi: 'Mật Hoa Lừa Dối',
     characters: [
       { name: 'Ganyu', element: 'Cryo' },
+      { name: 'Hu Tao', element: 'Pyro' },
       { name: 'Keqing', element: 'Electro' },
       { name: 'Mona', element: 'Hydro' },
       { name: 'Sucrose', element: 'Anemo' },
@@ -444,7 +498,10 @@ const CharacterAscension = [
   {
     nameEn: 'Dandelion Seed',
     nameVi: 'Hạt Bồ Công Anh',
-    characters: [{ name: 'Jean', element: 'Anemo' }],
+    characters: [
+      { name: 'Jean', element: 'Anemo' },
+      { name: 'Eula', element: 'Cryo' },
+    ],
   },
   {
     nameEn: 'Glaze Lily',
@@ -459,7 +516,10 @@ const CharacterAscension = [
   {
     nameEn: 'Noctilous Jade',
     nameVi: 'Dạ Phách Thạch',
-    characters: [{ name: 'Beidou', element: 'Electro' }],
+    characters: [
+      { name: 'Beidou', element: 'Electro' },
+      { name: 'Yanfei', element: 'Pyro' },
+    ],
   },
   {
     nameEn: 'Philanemo Mushroom',
@@ -481,7 +541,10 @@ const CharacterAscension = [
   {
     nameEn: 'Silk Flower',
     nameVi: 'Hoa Nghê Thường',
-    characters: [{ name: 'Xingqiu', element: 'Hydro' }],
+    characters: [
+      { name: 'Xingqiu', element: 'Hydro' },
+      { name: 'Hu Tao', element: 'Pyro' },
+    ],
   },
   {
     nameEn: 'Small Lamp Grass',
@@ -503,6 +566,7 @@ const CharacterAscension = [
     characters: [
       { name: 'Lisa', element: 'Electro' },
       { name: 'Noelle', element: 'Geo' },
+      { name: 'Rosaria', element: 'Cryo' },
     ],
   },
   {
@@ -527,6 +591,13 @@ const CharacterAscension = [
     nameEn: 'Wolfhook',
     nameVi: 'Quả Móc Câu',
     characters: [{ name: 'Razor', element: 'Electro' }],
+  },
+  {
+    nameEn: 'Sea Ganoderma',
+    nameVi: 'Hải Linh Chi',
+    characters: [
+      { name: 'Kazuha', element: 'Anemo' },
+    ],
   },
 ]
 
